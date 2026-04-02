@@ -1,26 +1,219 @@
-# 💎 FinTrack Pro — Elite Financial Suite
+# 💰 FinTrack – Personal Finance Dashboard
 
-Welcome to your premium personal finance dashboard. This project is architected for both immediate performance and professional-grade production.
-
-## 🚀 Instant Launch
-If you want to use the dashboard right now without any setup:
-1. Open **`preview.html`** in your browser.
-2. Every feature (Vault, Analysis, Data Persistence, Dark Mode) is fully functional here.
-
-## 🛠️ Professional Development (Localhost)
-To run the full React source code at `localhost:5173`:
-1.  **Repair Node.js**: If you encounter `mkdir \\?` errors, please reinstall Node.js (LTS version) from [nodejs.org](https://nodejs.org).
-2.  **Install Dependencies**: Run `npm install` in this folder.
-3.  **Start Dev Server**: Run `npm run dev`.
-
-## 📂 Project Architecture
-- **`src/App.tsx`**: Main UI Shell & Elite Layout.
-- **`src/store.ts`**: Zustand state management with real localStorage persistence.
-- **`src/components/`**: 
-  - `SpendingTrends.tsx`: High-fidelity Recharts dashboards.
-  - `TransactionList.tsx`: Searchable vault for all your entries.
-  - `TransactionModal.tsx`: The "Secure Entry" popup for adding data.
-- **`preview.html`**: A standalone, zero-dependency version of the entire suite.
+FinTrack is a modern, responsive personal finance dashboard that helps users track income, expenses, and overall financial health. It provides intuitive visualizations, transaction management, and role-based UI simulation to demonstrate real-world frontend architecture.
 
 ---
-**Enjoy your new elite financial intelligence platform!**
+
+## 🚀 Live Demo
+
+(https://fin-track-07.vercel.app/)
+
+---
+
+## 📌 Features
+
+### 📊 Dashboard Overview
+
+* Summary cards:
+
+  * Total Balance
+  * Total Income
+  * Total Expenses
+* Time-based visualization:
+
+  * Balance trend over time (Line Chart)
+* Category-based visualization:
+
+  * Expense breakdown (Pie/Donut Chart)
+
+---
+
+### 💳 Transactions Management
+
+* View all transactions in a structured table
+* Fields:
+
+  * Date
+  * Amount
+  * Category
+  * Type (Income / Expense)
+
+#### Functionalities:
+
+* 🔍 Search by category or amount
+* 🎯 Filter by transaction type
+* ↕️ Sort by date or amount
+* ⚠️ Empty state handling (no data UI)
+
+---
+
+### 🔐 Role-Based UI (Frontend Simulation)
+
+Switch roles using a dropdown:
+
+#### 👁 Viewer
+
+* Read-only access
+* Cannot modify transactions
+
+#### 🛠 Admin
+
+* Add new transactions
+* Edit existing transactions
+* Delete transactions
+
+---
+
+### 📈 Insights Section
+
+* Highest spending category
+* Monthly income vs expense comparison
+* Smart observations (e.g., spending trends)
+
+---
+
+## 🧠 State Management
+
+The application manages:
+
+* Transactions data
+* Filters (search, type)
+* Selected user role
+
+Implemented using:
+
+* React Context API / Zustand (scalable and clean)
+
+---
+
+## 🎨 UI & UX
+
+* Clean, modern fintech-inspired design
+* Fully responsive (mobile + desktop)
+* Card-based layout for clarity
+* Smooth interactions and intuitive navigation
+* Graceful handling of empty states
+
+---
+
+## ✨ Optional Enhancements
+
+* 🌙 Dark mode support
+* 💾 Local storage persistence
+* 🎬 Animations (Framer Motion)
+* 📤 Export transactions (CSV/JSON)
+* 🔌 Mock API integration
+
+---
+
+## 🏗️ Tech Stack
+
+* **Frontend:** React (Functional Components + Hooks)
+* **Styling:** Tailwind CSS
+* **Charts:** Recharts / Chart.js
+* **State Management:** Context API / Zustand
+* **Icons:** Lucide / Heroicons
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+│
+├── components/       # Reusable UI components
+├── pages/            # Main pages (Dashboard, Transactions, Insights)
+├── context/ or store/ # State management
+├── hooks/            # Custom hooks
+├── utils/            # Helper functions
+├── data/             # Sample/mock data
+└── App.jsx           # Root component
+```
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/fintrack-dashboard.git
+cd fintrack-dashboard
+```
+
+### 2. Install dependencies
+
+```bash
+npm install
+```
+
+### 3. Run the development server
+
+```bash
+npm run dev
+```
+
+### 4. Open in browser
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📊 Sample Data
+
+The app is initialized with mock transaction data including:
+
+* Multiple categories (Food, Travel, Salary, etc.)
+* Income and expense entries
+* Different dates for trend visualization
+
+---
+
+## 🧪 Assumptions
+
+* No backend is implemented
+* Role-based access is simulated on frontend only
+* Data persistence (if enabled) uses local storage
+
+---
+
+## 🏁 Evaluation Focus
+
+This project demonstrates:
+
+* Strong UI/UX design
+* Clean component architecture
+* Effective state management
+* Responsive layout implementation
+* Real-world dashboard features
+
+---
+
+## 🙌 Future Improvements
+
+* Backend integration (Node.js / Firebase)
+* Authentication system
+* Advanced analytics
+* Budget planning tools
+* Notifications & alerts
+
+---
+
+## 👨‍💻 Author
+
+**Dhruv kumar**
+
+---
+
+## ⭐ Acknowledgements
+
+* Inspired by modern fintech dashboards
+* Built as part of a frontend assessment
+
+---
+
+## 📄 License
+
+This project is for educational and evaluation purposes.
