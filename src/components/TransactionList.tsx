@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useFinanceStore, Transaction } from '../store';
+import { useFinanceStore } from '../store';
 import { Search, Filter, Download, ArrowUpRight, ArrowDownLeft, SearchIcon } from 'lucide-react';
 
 export const TransactionList: React.FC = () => {

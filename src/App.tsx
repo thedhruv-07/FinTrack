@@ -6,7 +6,6 @@ import {
   Target, 
   ShieldCheck, 
   Zap, 
-  Bell, 
   Sun, 
   Moon, 
   Plus, 
@@ -18,7 +17,6 @@ import {
   Settings,
   Cpu,
   ArrowUpRight,
-  ArrowDownLeft,
   Search,
   X
 } from 'lucide-react';

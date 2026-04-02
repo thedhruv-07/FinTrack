@@ -76,7 +76,7 @@ export const SpendingTrends: React.FC = () => {
               radius={[10, 10, 10, 10]} 
               barSize={20}
             >
-              {data.map((entry, index) => (
+              {data.map((_, index) => (
                 <Cell 
                   key={`cell-${index}`} 
                   fill={index === 4 ? '#0ea5e9' : '#0ea5e933'} 
